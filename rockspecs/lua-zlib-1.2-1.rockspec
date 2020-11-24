@@ -1,7 +1,8 @@
 package = "lua-zlib"
 version = "1.2-1"
 source = {
-   url = "git://github.com/brimworks/lua-zlib.git",
+   url = "https://github.com/MicroteamFI/mcm2-lua-zlib",
+   dir = "mcm2-lua-zlib",
    tag = "v1.2",
 }
 description = {
@@ -28,7 +29,7 @@ build = {
    type = "builtin",
    modules = {
       zlib = {
-         sources = { "lua_zlib.c" },
+         sources = { "mcm2-lua-zlib/lua_zlib.c" },
          libraries = { "z" },
          defines = { "LZLIB_COMPAT" },
          incdirs = { "$(ZLIB_INCDIR)" },

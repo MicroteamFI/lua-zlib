@@ -24,8 +24,8 @@ MAC_ENV     = env MACOSX_DEPLOYMENT_TARGET='$(MACVER)'
 MAC_CFLAGS  = -O2 -fPIC -fno-common $(WARN) $(INCDIR) $(DEFS)
 MAC_LDFLAGS = -bundle -undefined dynamic_lookup -fPIC $(LIBDIR)
 
-CC = gcc
-LD = $(MYENV) gcc
+CC ?= gcc
+LD ?= $(MYENV) gcc
 CFLAGS  = $(MYCFLAGS)
 LDFLAGS = $(MYLDFLAGS)
 
