@@ -32,7 +32,7 @@ build = {
          sources = { "mcm2-lua-zlib/lua_zlib.c" },
          libraries = { "z" },
          defines = { "LZLIB_COMPAT" },
-         incdirs = { "$(ZLIB_INCDIR)" },
+         --incdirs = { "$(ZLIB_INCDIR)" },
       }
    },
    platforms = {
